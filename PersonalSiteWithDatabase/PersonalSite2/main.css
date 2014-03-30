@@ -1,0 +1,110 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	}
+a
+	{
+	display:block;
+	padding: 20px 0px 20px 0px;
+	color:white;
+	background: rgba(15,15,15,0.85);
+	margin:20px;
+	margin-left:0px;
+	font: bold 25px Tahoma;
+	text-decoration:none;
+	}
+a:hover
+	{
+	background:white;
+	color:black;
+	}
+
+
+img
+	{
+	margin:10px;
+	text-wrap:block;
+	border-style:solid;
+	border-color:white;
+	height:75px;
+	width;75px;
+	}
+	
+h1
+	{
+	font: bold 30px Tahoma;
+	color: white;
+	}
+
+h2
+	{
+	font: bold 25px Tahoma;
+	}
+
+header, section, footer, aside, nav, article, hgroup
+	{
+	display:block;
+	}
+
+body
+	{
+	text-align:center; /* takes care of old browser compatibility */
+	}
+	
+li
+	{
+	list-style:none;
+	}
+#big_wrapper
+	{
+	width:1000px;
+	margin:20px auto;
+	text-align:left;
+	}
+	
+#top_header
+	{
+	background: rgba(15,15,15,0.85);
+	padding: 20px;
+	}
+
+#side_menu
+	{
+	color:white;
+	padding-left:0px;
+	}
+
+#side_menu
+	{
+	float:left;
+	width: 220px;
+	list-style:none;
+	padding: 0px;
+	margin-top:15px;
+	}
+
+#main_section
+	{
+	float: right;
+	width: 660px;
+	margin: 30px;
+	margin-right: 0px;
+	}
+	
+#the_footer
+	{
+	
+	clear:both;
+	text-align:center;
+	padding:20px;
+	border-top:1px solid black;
+	}
+
+
+article
+	{
+	background: rgba(15,15,15,0.85);
+	padding: 20px;
+	margin-bottom: 15px;
+	color:#939393;
+	}

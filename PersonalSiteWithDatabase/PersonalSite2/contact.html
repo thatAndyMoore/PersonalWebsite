@@ -1,0 +1,95 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Andrew - Contact Me</title>
+	<link rel="stylesheet" href="main.css">
+</head>
+
+<body style="background-image:url(images/contact.jpg); background-position: center; background-attachment:fixed;">
+
+
+	<div id="big_wrapper">
+
+		<header id="top_header">
+			<h1>Contact Me</h1>
+		</header>
+
+		<nav id="side_menu"> <!-- Site navigation goes here -->
+			<ul><!-- unordered list, figure out how to make vertical -->
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="professional.html">Professional</a></li>
+				<li><a href="community.html">Community</a></li>
+				<li><a href="links.html">Favorite Websites</a></li>
+				<li><a href="contact.html">Contact Me!</a></li>
+			</ul>
+		</nav>
+
+		<section id="main_section"> <!-- main content goes here -->
+			<article>
+			<header>
+				<hgroup> <!-- creates a group for the header -->
+					<h1>Enter your info here</h1>
+					<h2>Chicks only</h2>
+				</hgroup>
+			</header>
+
+			<p>
+			If you want me to get in touch with you:</br>
+			<form action="insertContact.php" name="form" method="post">
+			Email:</br><input placeholder="Enter your email address" type="email" name="email" id="first"/></input></br>
+			First Name:</br><input type="text" name="firstName" placeholder="Submit thy first name"/></br>
+			Last Name:</br><input type="text" name="lastName" placeholder="Submit thy last name"/></br>
+			Phone number (chicks only!):</br><input type="text" name="phoneNumber" placeholder="Submit they phone number"/></br>
+			<input type="submit" value="Submit your information" onclick="return(validate())"/></br>
+			<input type="reset" value="If you messed up click here... and do it right next time!!"/></form></p>
+
+
+			<footer>
+				<p></p>
+			</footer>
+			</article>
+
+		</section>
+
+		<footer id="the_footer">
+			Copyright ME!! 2013
+		</footer>
+
+	</div>
+</body>
+<script>
+function validate()
+{
+	valid = true;
+
+	if ( document.form.email.value == "" )
+	{
+		alert ("Email cannot be left blank");
+		valid = false;
+	}
+
+	if ( document.form.firstName.value == "" )
+	{
+		alert ("First name cannot be left blank. I'm guessing you have a first name, unless you are Madona or Cher, so please write it in.");
+		valid = false;
+	}
+
+	if ( document.form.lastName.value == "" )
+	{
+		alert ("Last Name cannot be left blank");
+		valid = false;
+	}
+
+	if ( document.form.phoneNumber.value == "" )
+	{
+		alert ("Phone number cannot be left blank. How do you expect me to call you at 2am??");
+		valid = false;
+	}
+return valid;
+}
+</script>
+
+</html>
